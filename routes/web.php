@@ -7,4 +7,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resource("kelurahan", KelurahanController::class);
+
+Route::prefix("admin")->group(function () {
+    Route::get("/", function () {
+        return view("admin.index");
+    });
+    Route::resource("kelurahan", KelurahanController::class);
+});
