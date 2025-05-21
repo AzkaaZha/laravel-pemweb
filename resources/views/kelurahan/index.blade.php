@@ -5,7 +5,7 @@
             <div class="card-body">
                 <a href="{{ route('kelurahan.create') }}">Tambah</a>
                 <table border="1" 
-                class="table table-striped table-borderedj">
+                class="table table-striped table-borderedjcc">
                     <tr>
                         <th>No</th>
                         <th>Nama</th>
